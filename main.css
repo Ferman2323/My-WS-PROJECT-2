@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Merienda&family=Playfair+Display&family=Rammetto+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  color: black;
+}
+p {
+  color: black;
+}
+body {
+  font-family: "Playfair Display", serif;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+header {
+  background-color: transparent;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black !important;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: #f5f5f5;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.8s ease;
+}
+.nav-link:hover {
+  opacity: 80%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+.main-text {
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+.main-text p {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.about-me {
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.about-me p {
+  text-align: center;
+  align-items: center;
+  padding-right: 100px;
+  font-size: 18px;
+}
+.profile img {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 70%;
+  border-radius: 50%;
+  background-color: grey;
+}
+.signature {
+  margin-top: 100px;
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-item:first-child {
+    border-top: 1px solid black;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
