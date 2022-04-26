@@ -90,21 +90,26 @@ a {
   padding-right: 100px;
   font-size: 18px;
 }
+
 .profile img {
   margin-top: 50px;
   margin-left: 100px;
-  width: 70%;
-  border-radius: 50%;
-  background-color: grey;
+  width: 50%;
+  border-radius: 10%;
+  background: rgb(126, 126, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 126, 126, 1) 0%,
+    rgba(167, 167, 167, 1) 35%,
+    rgba(123, 125, 125, 1) 100%
+  );
 }
 .signature {
   margin-top: 100px;
   width: 30%;
 }
 
-
 @media (max-width: 576px) {
-  
   body {
     overflow-x: hidden !important;
   }
@@ -119,7 +124,7 @@ a {
     font-size: 22px;
   }
   .main-text p {
-    font-size: 20px;;
+    font-size: 20px;
   }
 
   .about-me p {
@@ -141,11 +146,10 @@ a {
     border-radius: 0% !important;
     background-color: grey;
   }
-  #one{
+  #one {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
   #one img {
     width: 50%;
@@ -176,7 +180,7 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 100px;
+    top: 70px;
     gap: 0;
     flex-direction: column;
     background-color: white;
@@ -201,7 +205,7 @@ a {
     padding: 50px;
     z-index: 1;
   }
-  
+
   .profile img {
     display: flex;
     align-items: center;
@@ -235,8 +239,15 @@ a {
     border-radius: 50%;
     background-color: grey;
   }
+
   #one img {
     width: 60%;
+  }
+}
+@media (min-width: 993px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 .overlay {
