@@ -16,7 +16,6 @@ body {
   font-family: "Playfair Display", serif;
   overflow-x: hidden;
   background-color: #fafafa;
-  overflow-x: hidden;
 }
 header {
   background-color: transparent;
@@ -103,6 +102,55 @@ a {
   width: 30%;
 }
 
+
+@media (max-width: 576px) {
+  
+  body {
+    overflow-x: hidden !important;
+  }
+  .nav-menu {
+    z-index: 10;
+  }
+  .main-text {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .main-text h1 {
+    font-size: 22px;
+  }
+  .main-text p {
+    font-size: 20px;;
+  }
+
+  .about-me p {
+    text-align: center;
+    align-items: center;
+    font-size: 20px !important;
+    z-index: 1;
+  }
+  .profile {
+    display: block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .profile img {
+    align-items: center;
+    justify-content: center;
+    border-radius: 0% !important;
+    background-color: grey;
+  }
+  #one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #one img {
+    width: 50%;
+  }
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -118,14 +166,17 @@ a {
   }
   .nav-item:first-child {
     border-top: 1px solid black;
-    width: 70%;
+    width: 100%;
     padding-top: 50px;
+  }
+  .navbar a {
+    font-size: 20px;
   }
 
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 100px;
     gap: 0;
     flex-direction: column;
     background-color: white;
@@ -150,12 +201,16 @@ a {
     padding: 50px;
     z-index: 1;
   }
+  
   .profile img {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: grey;
+  }
+  #one img {
+    width: 50%;
   }
 }
 
@@ -179,6 +234,9 @@ a {
     justify-content: center;
     border-radius: 50%;
     background-color: grey;
+  }
+  #one img {
+    width: 60%;
   }
 }
 .overlay {
