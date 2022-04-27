@@ -15,18 +15,18 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body class="body">
+    <div class="preloader">
+      <img src="img/gif.gif" alt="" />
+    </div>
     <header>
       <nav class="navbar">
         <a href="#" class="nav-branding">Sasa Fermanovic</a>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link black">Home</a>
+            <a href="index.html" class="nav-link black">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -48,20 +48,20 @@
           id="one"
           class="text-center col-xs-12 col-sm-12 col-lg-6 col-xl-6 profile"
         >
-          <img src="img/Untitled_ccexpress (1).png" alt="" class="img-fluid" />
+          <img src="img/avatar2.png" alt="" class="img-fluid" />
         </div>
         <div class="about-me col-xs-12 col-sm-12 col-lg-6 col-xl-6">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio
-            nihil excepturi quibusdam fugiat ad deserunt itaque, libero
-            reprehenderit, quasi, nulla odit assumenda at exercitationem
-            voluptatem commodi! Numquam recusandae vel exercitationem, facilis
-            placeat laboriosam ex optio neque repellat debitis, error tenetur
-            distinctio qui quia, beatae explicabo in impedit consequatur iste?
+            I'm a Web Developer with 1 + years experience in developing Websites
+            and Webb App. Passionate about creating interactive applications and
+            expreiences on the web.
           </p>
           <img class="signature" src="img/signature (4)_ccexpress.png" alt="" />
           <p class="signature"></p>
         </div>
+      </div>
+      <div class="my-portfolio">
+        <button>My Portfolio</button>
       </div>
     </div>
     <div class="overlay hidden"></div>
@@ -71,6 +71,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="main.js"></script>
+    <script src="main.js">
+        $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+    <script src="jquery-2.1.4.js"></script>
   </body>
 </html>

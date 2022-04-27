@@ -1,5 +1,10 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function vanish() {
+  preloader.classList.add("disappear");
+});
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
