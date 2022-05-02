@@ -135,11 +135,14 @@ a:hover {
 
 .profile img {
   margin-top: 100px;
-  margin-left: 100px;
   width: 50%;
   border-radius: 0;
   background-color: transparent;
   border-radius: 70%;
+}
+#one img {
+  margin-left: auto;
+  margin-right: auto;
 }
 .signature {
   margin-top: 100px;
@@ -280,11 +283,12 @@ a:hover {
   #one img {
     width: 50%;
   }
+
   .my-portfolio {
     display: flex;
     justify-content: center;
     margin-right: 0;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -314,14 +318,19 @@ a:hover {
   }
 
   #one img {
-    width: 60%;
+    width: 50%;
   }
 }
 @media (min-width: 993px) {
   body {
     overflow-x: hidden;
-    overflow-y: hidden;
   }
+.main-text{
+  margin-top: 20px;
+}
+.my-portfolio{
+  margin-bottom: 50px;
+}
 }
 .overlay {
   position: absolute;
